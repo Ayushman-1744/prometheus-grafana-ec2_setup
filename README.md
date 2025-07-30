@@ -2,12 +2,12 @@
 
 This repository contains a complete monitoring solution using Docker Compose on an EC2 instance.
 
-**This lab setup achieves:
-1.Docker host metrics exposure.
-2.Prometheus collection of Docker & system metrics.
-3.Grafana dashboard visualization.
-4.Full containerized monitoring stack with minimal manual setup.
-**
+# This lab setup achieves:
+# 1.Docker host metrics exposure.
+# 2.Prometheus collection of Docker & system metrics.
+# 3.Grafana dashboard visualization.
+# 4.Full containerized monitoring stack with minimal manual setup.
+
 ## Services
 - Prometheus (`:9090`)
 - Grafana (`:3000`)
