@@ -1,2 +1,22 @@
 Username: admin
 Password: password
+
+****Add Prometheus as Data Source
+Go to: Gear Icon → Data Sources → Add data source
+
+Choose: Prometheus
+
+URL: http://prometheus:9090
+
+Save & Test
+
+➤ Step 5: Import Docker Monitoring Dashboard
+Click + → Import
+
+Paste or upload a dashboard JSON file (can use Docker & cAdvisor default dashboard ID: 193)
+
+Select your Prometheus source
+
+Click Import
+
+Run queries to see visualizations.
