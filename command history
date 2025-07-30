@@ -1,0 +1,40 @@
+    1  yum install docker -y
+    2  systemctl start docker
+    3  systemctl enable docker
+    4  systemctl status docker
+    5  vi /etc/docker/daemon.json
+    6  systemctl restart docker
+    7  sudo yum install -y firewalld
+    8  sudo systemctl start firewalld
+    9  systemctl enable firewalld
+   10  sudo firewall-cmd --zone=public --add-port=9323/tcp --permanent
+   11  sudo firewall-cmd --reload
+   12  cd /root
+   13  sudo vi prometheus.yml
+   14  docker-compose version
+   15  sudo curl -L "https://github.com/docker/compose/releases/download/v2.23.3/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+   16  sudo chmod +x /usr/local/bin/docker-compose
+   17  docker-compose version
+   18  sudo vi /root/docker-compose.yml
+   19  docker-compose up -d
+   20  sudo systemctl daemon-reexec
+   21  sudo systemctl restart docker
+   22  docker-compose up -d
+   23  docker ps -a
+   24  docker ps
+   25  ip a | grep inet
+   26  docekr ps
+   27  docker ps
+   28  sudo systemctl start docker
+   29  cd /root
+   30  docker-compose up -d
+   31  sudo firewall-cmd --permanent --add-port=9090/tcp
+   32  sudo firewall-cmd --permanent --add-port=3000/tcp
+   33  sudo firewall-cmd --permanent --add-port=8080/tcp
+   34  sudo firewall-cmd --permanent --add-port=9091/tcp
+   35  sudo firewall-cmd --permanent --add-port=9100/tcp
+   36  sudo firewall-cmd --reload
+   37  curl http://checkip.amazonaws.com
+   38  sudo ss -tuln | grep -E '9090|3000|8080|9091|9100'
+   39  docker ps
+   40  history
